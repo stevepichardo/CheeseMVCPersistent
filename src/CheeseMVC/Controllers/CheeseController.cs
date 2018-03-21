@@ -19,6 +19,7 @@ namespace CheeseMVC.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+
             List<Cheese> cheeses = context.Cheeses.ToList();
 
             return View(cheeses);
